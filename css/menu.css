@@ -1,0 +1,80 @@
+header {
+	font-family: cuprum, arial, sans-serif;
+	}
+
+.new-menu ul,
+.new-menu ol {
+	list-style: none;
+}	
+
+.new-menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.new-menu ul li a {
+    display: block;
+    background: #8a8080;
+    padding: 15px 80px 15px 40px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.new-menu ul li {
+	position: relative;
+	border-right: 2px solid #7e2e2e;
+}
+
+.new-menu ul li a i {
+	position: absolute;
+	left: 14px;
+	top: 15px;
+	font-size: 15px;
+}
+
+.new-menu ul li:first-child {
+	border-left: 2px solid #7e2e2e;
+}
+
+.new-menu ul li:last-child {
+	border-right: 2px solid #7e2e2e;
+}
+
+
+.new-menu ul li a:hover {
+	background: #7e2e2e;
+	color: #fff;
+	box-shadow: 0px 5px 10px -5px #000;
+	transition: all 0.2s ease;
+}
+
+
+
+
+
+/*выпадающий список*/
+
+.new-menu li ul {
+	position: absolute;
+	min-width: 100px;
+	padding-left: 0px;
+	display: none;
+}
+
+.new-menu li ul li {
+	border: 1px solid #7e2e2e;
+
+}
+
+.new-menu li ul li a {
+    padding-left: 10px;
+    text-transform: none;
+    background: #964a4a;
+}
+
+.new-menu li:hover ul {
+	display: block;
+}

@@ -1,0 +1,58 @@
+.one {
+	padding: 0px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+.blockimg {
+	width: 400px;
+	height: 288px;
+	overflow: hidden;
+	cursor: pointer;
+	background: #000;
+}
+
+.blockimg img {
+	width: 100%;
+	transition: .5s;
+}
+
+.one:hover .blockimg img {
+	transform: rotate(-10deg) scale(1.4);
+	filter: blur(1px);
+	opacity: .5;
+}
+
+.blocktext {
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	right: 20px;
+	bottom: 30px;
+	display: block;
+}
+
+.text {
+	visibility: hidden;
+	color: #fff;
+    padding: 20px;
+    transition: .2s;
+}
+
+.text h3 span {
+   color: #a52a2a;
+
+}
+
+.text p span {
+   text-transform: uppercase;
+   position: absolute;
+   top: 140px;
+}
+
+.blocktext:hover .text {
+   visibility: visible;
+}
